@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+.main-header {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.main-header,
+.form {
+  min-height: 24vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-input,
+.todoBtn {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #fff;
+  outline: none;
+}
+.todoBtn {
+  color: #fda085;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.todoBtn:hover {
+  color: #fff;
+  background: #fda085;
+}
