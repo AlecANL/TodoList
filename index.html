@@ -19,15 +19,20 @@
       <h1 class="main-title">Todo List</h1>
     </header>
     <form class="form" action="#">
-      <input type="text" class="todo-input" />
-      <button class="todoBtn" type="submit">
+      <input type="text" class="todo-input" id="todo-input" />
+      <button class="todoBtn" type="submit" id="todo-btn">
         <i class="fas fa-plus-circle"></i>
       </button>
+      <div class="select">
+        <select name="tasks" id="task-filter" class="selected">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="inCompleted">In Completed</option>
+        </select>
+      </div>
     </form>
     <div class="todo-container">
-      <ul class="todo-list">
-        fsdfds
-      </ul>
+      <ul class="todo-list" id="todo-list"></ul>
     </div>
     <script src="./app.js"></script>
   </body>
